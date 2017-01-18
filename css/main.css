@@ -39,6 +39,7 @@
   a:focus {
     outline:none;
     outline-offset: 0;
+    color: red;
   }
 
   a {
