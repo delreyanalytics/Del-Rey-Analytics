@@ -10,8 +10,9 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+	  <link href="css/main.css" rel="stylesheet">
+	  <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -26,39 +27,25 @@
 
 <body>
 	<header id="header">
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-sm-12 overflow">
-                   <div class="social-icons pull-right">
-                        <ul class="nav nav-pills">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-             </div>
-        </div> -->
-        <div class="navbar navbar-inverse" role="banner">
+        <div class="navbar navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="btnCollapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar" style="background-color: rgb(245, 200, 11)"></span>
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand img-responsive" href="index.html">
-                    	<h1><img style="max-height: 75px"src="images/delrey_logo.png" alt="logo"></h1>
+                    <a class="navbar-brand img-responsive" href="#">
+                    	<h1><img style="max-height: 50px"src="images/delrey_logo.png" alt="logo"></h1>
                     </a>
 
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- <li class="active"><a href="index.html">Home</a></li> -->
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="a"><a href="#about">About</a></li>
+                        <li class="a"><a href="#services">Services</a></li>
                     </ul>
                 </div>
                 <!-- <div class="search">
@@ -80,9 +67,7 @@
               <div class="col-sm-12">
                 <div class="main-slider">
                     <div class="slide-text">
-                        <h1 style="font-size: 350%">Numbers that Count.</h1>
-                        <h2>Advanced Signal Processing for Health Care.</h2>
-                        <p>Our technical goal is to turn sensor data into useful clinical or biometric information.  Applications include non-contact cardiac sensor signal processing for biometrics, wearables, etc., with the ultimate goal of bringing real time sensor fusion to the bedside.</p>
+                        <h1 style="font-size: 350%">Advanced Signal Processing for Health Care.</h1>
                     </div>
                     <img src="images/intro/smartwatch.png" class="slider-hill" alt="slider">
                     <!-- <img src="images/home/slider/hill.png" class="slider-house" alt="slider image">
@@ -97,9 +82,13 @@
     </section>
     <!--/#home-slider-->
 
-    <section id="services">
+    <section id="about" style="padding-top: 75px">
         <div class="container">
             <div class="row">
+              <div class="col-xs-12">
+                <h1 class="text-center"> <strong>Numbers, that Count.</strong></h1>
+                <h2 class="text-center">Our technical goal is to turn sensor data into useful clinical or biometric information.  Applications include non-contact cardiac sensor signal processing for biometrics, wearables, etc., with the ultimate goal of bringing real time sensor fusion to the bedside.</h2>
+              </div>
                 <div class="col-xs-12 col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
@@ -147,7 +136,7 @@
    </section>
     <!--/#action-->
 
-    <section id="features">
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="single-features">
@@ -191,7 +180,7 @@
                 <div class="single-features">
                   <div class="col-sm-12 text-center">
                     <div class="col-sm-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/services/services-1.jpg" class="img-responsive center-block" alt="">
+                        <img src="images/services/services-5-2.jpeg" class="img-responsive center-block" alt="">
                     </div>
                     <div class="col-sm-12 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                         <h2>Solutions using active and passive sensor technologies</h2>
@@ -217,36 +206,12 @@
         </div>
      </section> -->
     <!--/#clients-->
-
+<hr>
     <footer id="footer">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
                 <div class="col-sm-12 text-center bottom-separator">
-                    <img src="images/home/under.png" class="img-responsive inline" alt="">
                 </div>
-                <!-- <div class="col-md-4 col-sm-6">
-                    <div class="testimonial bottom">
-                        <h2>Testimonial</h2>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
-                                <h3><a href="#">- Jhon Kalis</a></h3>
-                            </div>
-                         </div>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
-                                <h3><a href="">- Abraham Josef</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="col-md-12 col-sm-12 text-center">
                   <div class="col-sm-6 text-center">
                     <div class="contact-info bottom">

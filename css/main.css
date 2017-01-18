@@ -642,9 +642,10 @@ ul.sub-menu {
 }
 
 #action {
-  background-image: url(../images/home/tour-bg.png);
+  /*background-image: url(../images/home/tour-bg.png);*/
+  background-image: url(../images/patterns/graphy.PNG);
   background-color: #fbfafa;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   height: 157px;
   background-position: center;
   display: table;
@@ -656,7 +657,7 @@ ul.sub-menu {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
-  position: statice;
+  position: static;
 }
 
 

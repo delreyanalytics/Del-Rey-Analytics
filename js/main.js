@@ -10,6 +10,31 @@ jQuery(function($) {'use strict';
 		});
 	});
 
+	// page scroll
+	$("#nav ul li a[href^='#']").on('click', function(e) {
+
+	 // prevent default anchor click behavior
+	 e.preventDefault();
+
+	 // animate
+	 $('html, body').animate({
+			 scrollTop: $(this.hash).offset().top
+		 }, 300, function(){
+
+			 // when done, add hash to url
+			 // (default click behaviour)
+			 window.location.hash = this.hash;
+		 });
+
+});
+
+
+// jQuery that allows collapsed menu to disappear after clicking.
+$(".a").click(function () {
+					 if ($("#btnCollapse").css('display')!='none')
+					 $("#btnCollapse").click();
+			 });
+
 	//Fit Vids
 	if( $('#video-container').length ) {
 		$("#video-container").fitVids();
@@ -30,15 +55,15 @@ jQuery(function($) {'use strict';
 		}
 
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
-		
+
 		if($portfolio_selectors.length) {
-			
+
 			var $portfolio = $('.portfolio-items');
 			$portfolio.isotope({
 				itemSelector : '.portfolio-item',
 				layoutMode : 'fitRows'
 			});
-			
+
 			$portfolio_selectors.on('click', function(){
 				$portfolio_selectors.removeClass('active');
 				$(this).addClass('active');
@@ -57,7 +82,7 @@ jQuery(function($) {'use strict';
 		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
 		$this.countTo(options);
 	}
-		
+
 	// Search
 	$('.fa-search').on('click', function() {
 		$('.field-toggle').fadeToggle(200);
